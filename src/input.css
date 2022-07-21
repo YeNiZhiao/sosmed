@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    overflow-x: hidden;
+}
+
+.awalan {
+    background-image: url(../img/bg-1.png);
+    background-size: cover;
+}
+
+.start {
+    opacity: 0;
+    transition: all .4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.hilang {
+    opacity: 0;
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(-1000px);
+}
+
+.remove {
+    opacity: 0;
+    transform: translateY(1000px);
+    transition: 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.nav {
+    max-height: 0;
+    padding: 0;
+    transition: .8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.nav-atas {
+    transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(-50%) translateY(-500px);
+    opacity: 0;
+}
+
+.nav-bawah {
+    transition: all .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(-50%) translateY(500px);
+    opacity: 0;
+}
+
+.tampil {
+    transition: all .6s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
+
+.waktu {
+    transform: translateX(-1000px);
+    opacity: 0;
+    transition: .8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.lokasi {
+    transform: translateX(1000px);
+    opacity: 0;
+    transition: .8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.couple {
+    transform: translateY(1100px);
+    opacity: 0;
+    transition: .8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.cerita {
+    transform: translateY(-1100px);
+    opacity: 0;
+    transition: .8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.galeri {
+    transform: scale(0);
+    opacity: 0;
+    transition: .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pesan {
+    /* transform: scale(0); */
+    opacity: 0;
+    transform: translateX(1000px);
+    transition: .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.navmuncul {
+    position: absolute;
+    transform: scale(1) translateY(0) translateX(0);
+    opacity: 1;
+}
+
+.show {
+    opacity: 100%;
+}
